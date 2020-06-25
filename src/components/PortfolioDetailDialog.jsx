@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import { Modal, Button } from "react-bootstrap";
 import Image from "components/Image";
-import Icon from "./Icon";
+import Slider from "components/Slider"
 
 const PortfolioDetailDialog = ({
   onHide,
@@ -33,14 +33,14 @@ const PortfolioDetailDialog = ({
           fileName={imageFileName}
           alt={imageAlt || header || subheader}
         />
+
         <p>{content}</p>
         {extraInfo}
       </Modal.Body>
       <Modal.Footer>
         <div className="mx-auto">
           <Button variant="primary" onClick={onHide}>
-            <Icon iconName="CloseIcon" />
-            &nbsp; Close Project
+            Посмотреть ещё
           </Button>
         </div>
       </Modal.Footer>

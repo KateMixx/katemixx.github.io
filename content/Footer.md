@@ -1,12 +1,7 @@
 ---
 copyright: "Copyright © Кружева 2020"
 social: {
-  twitter: "#",
-  facebook: "#",
-  medium: "#"
+  instagram: "salon_kruzheva"  
 }
-privacyText: "Privacy Policy"
-privacyHref: "#!"
-termsText: "Terms of Use"
-termsHref: "#!"
+
 ---

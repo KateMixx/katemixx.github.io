@@ -9,9 +9,9 @@ teamMember: [
     header: "Kay Garland",
     subheader: "Lead Designer",
     social: {
+      instagram: "#",
       twitter: "#",
-      facebook: "#",
-      linkedin: "#"
+      facebook: "#"      
     }
   },
   {

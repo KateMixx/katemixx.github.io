@@ -1,21 +1,29 @@
 ---
-header: "Свяжитесь с нами! "
+header: "Наши клиенты "
 clients: [
   {
-    imageFileName: "logos/envato.jpg",
+    imageFileName: "logos/chapaevskii.jpg",
     href: "#!"
   },
   {
-    imageFileName: "logos/designmodo.jpg",
+    imageFileName: "logos/pojartech.jpg",
     href: "#!"
   },
   {
-    imageFileName: "logos/themeforest.jpg",
+    imageFileName: "logos/terema.jpg",
     href: "#!"
   },
   {
-    imageFileName: "logos/creative-market.jpg",
+    imageFileName: "logos/rjd.jpg",
     href: "#!"
-  }
+  },
+  {
+    imageFileName: "logos/tvAcademy.jpg",
+    href: "#!"
+  },
+  {
+    imageFileName: "logos/volPek.jpg",
+    href: "#!"
+  } 
 ]
 ---

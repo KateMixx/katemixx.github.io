@@ -6,11 +6,9 @@ import { Row } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PortfolioItem from "components/PortfolioItem";
 import PageSection from "components/PageSection";
+import "./PortfolioPage.scss";
 
-
-import "./Portfolio.scss";
-
-const Portfolio = ({ className, frontmatter }) => {
+const PortfolioPage = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
@@ -18,7 +16,7 @@ const Portfolio = ({ className, frontmatter }) => {
   const { anchor, header: rootHeader, subheader: rootSubHeader, portfolios } = frontmatter;
 
   return (
-    <PageSection className={clsx("portfolio-section", className)} id={anchor}>
+    <Page className={clsx("portfolio-section", className)} id={anchor}>
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
@@ -39,24 +37,22 @@ const Portfolio = ({ className, frontmatter }) => {
                   ))}
                 </ul>
               }
-
             />
           ),
         )}
-
       </Row>
-    </PageSection>
+    </Page>
   );
 };
 
-Portfolio.propTypes = {
+PortfolioPage.propTypes = {
   className: PropTypes.string,
   frontmatter: PropTypes.object,
 };
 
-Portfolio.defaultProps = {
+PortfolioPage.defaultProps = {
   className: null,
   frontmatter: null,
 };
 
-export default Portfolio;
+export default PortfolioPage;

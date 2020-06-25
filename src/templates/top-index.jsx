@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import Navbar from "views/Navbar";
 import Top from "views/Top";
 import Footer from "views/Footer";
+
 import * as Sections from "views/Sections";
 import SEO from "components/SEO";
 import LanguageSelector from "components/LanguageSelector";
@@ -53,16 +54,15 @@ export const query = graphql`
             subheader
             imageFileNameDetail
             imageFileName
-          }
-          privacyHref
-          privacyText
+          }          
           services {
             content
             header
             iconName
             imageFileName
-          }
+          }        
           social {
+            instagram
             facebook
             github
             linkedin
@@ -74,6 +74,7 @@ export const query = graphql`
             header
             imageFileName
             social {
+              instagram
               facebook
               github
               linkedin
@@ -82,9 +83,7 @@ export const query = graphql`
             }
             subheader
           }
-          telephone
-          termsHref
-          termsText
+          telephone         
           title
           timeline {
             content

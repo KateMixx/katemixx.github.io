@@ -50,6 +50,7 @@ TeamMember.propTypes = {
     linkedin: PropTypes.string,
     github: PropTypes.string,
     medium: PropTypes.string,
+    instagram: PropTypes.string
   }),
 };
 
@@ -63,6 +64,7 @@ TeamMember.defaultProps = {
     linkedin: null,
     github: null,
     medium: null,
+    instagram: null
   },
 };
 
