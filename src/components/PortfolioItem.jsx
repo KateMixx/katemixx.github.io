@@ -14,10 +14,9 @@ const PortfolioItem = ({
   imageAlt,
   header,
   subheader,
-  content,
   imageFileNameDetail,
   imageAltDetail,
-  extraInfo
+  images
 }) => {
   const [showDetail, setShowDetail] = React.useState(false);
   const handleShowDetail = React.useCallback(() => {
@@ -44,7 +43,7 @@ const PortfolioItem = ({
           />
           <div className="portfolio-hover">
             <div className="portfolio-hover-content">
-              <Icon iconName="PlusIcon" size="2x" />
+              <Icon iconName="SearchIcon" size="2x" />
             </div>
           </div>
         </a>
@@ -60,8 +59,7 @@ const PortfolioItem = ({
         imageAlt={imageAltDetail || imageAlt}
         header={header}
         subheader={subheader}
-        content={content}
-        extraInfo={extraInfo}
+        images={images}
       />
     </>
   );
@@ -72,19 +70,17 @@ PortfolioItem.propTypes = {
   imageAlt: PropTypes.string,
   header: PropTypes.string.isRequired,
   subheader: PropTypes.string,
-  content: PropTypes.string,
   imageFileNameDetail: PropTypes.string,
   imageAltDetail: PropTypes.string,
-  extraInfo: PropTypes.any,
+  images: PropTypes.any
 };
 
 PortfolioItem.defaultProps = {
   imageAlt: "",
   subheader: "",
-  content: "",
   imageFileNameDetail: "",
   imageAltDetail: "",
-  extraInfo: null,
+  images: null
 };
 
 export default PortfolioItem;

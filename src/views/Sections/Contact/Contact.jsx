@@ -4,13 +4,14 @@ import PropTypes from "prop-types";
 import { Row, Col } from "react-bootstrap";
 import Icon from "components/Icon";
 import PageSection from "components/PageSection";
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 const Contact = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, email } = frontmatter;
+  const { anchor, header, subheader, telephone, telephone2, email, address, address2 } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -22,16 +23,52 @@ const Contact = ({ className, frontmatter }) => {
         </Col>
       </Row>
       <Row>
-        <Col lg={4} className="ml-auto text-center">
-          <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
-          <a className="d-block" href={`tel:${telephone}`}>
-            {telephone}
-          </a>
-        </Col>
-        <Col lg={4} className="mr-auto text-center">
+        <Col lg={12} className="mr-auto text-center">
           <Icon iconName="EnvelopIcon" size="3x" className="text-muted mb-3" />
           <a className="d-block" href={`mailto:${email}`}>
             {email}
+          </a>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg={4} className="mr-auto text-center">
+          <Icon iconName="AdressIcon" size="3x" className="text-muted mb-3" />
+          <a className="d-block">
+            {address}
+          </a>
+        </Col>
+        <YMaps>
+          <div>
+            <Map defaultState={{ center: [56.831231, 35.944226], zoom: 16 }} >
+              <Placemark geometry={[56.831231, 35.944226]} />
+            </Map>
+          </div>
+        </YMaps>
+        <Col lg={4} className="mr-auto text-center">
+          <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
+          <a className="d-block">
+            {telephone}
+          </a>
+        </Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Col lg={4} className="mr-auto text-center">
+          <Icon iconName="AdressIcon" size="3x" className="text-muted mb-3" />
+          <a className="d-block">
+            {address2}
+          </a>
+        </Col>
+        <YMaps>
+          <div>
+            <Map defaultState={{ center: [56.888467, 35.902049], zoom: 16 }}>
+              <Placemark geometry={[56.888467, 35.902049]} />
+            </Map>
+          </div>
+        </YMaps>
+        <Col lg={4} className="mr-auto text-center">
+          <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
+          <a className="d-block">
+            {telephone2}
           </a>
         </Col>
       </Row>

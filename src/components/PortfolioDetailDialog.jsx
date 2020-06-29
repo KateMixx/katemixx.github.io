@@ -11,8 +11,8 @@ const PortfolioDetailDialog = ({
   imageAlt,
   header,
   subheader,
-  content,
   extraInfo,
+  images,
   ...restProps
 }) => {
   return (
@@ -28,22 +28,8 @@ const PortfolioDetailDialog = ({
       </Modal.Header>
       <Modal.Body className="mx-auto">
         <p className="item-intro text-muted">{subheader}</p>
-        <Image
-          className="img-fluid d-block"
-          fileName={imageFileName}
-          alt={imageAlt || header || subheader}
-        />
-
-        <p>{content}</p>
-        {extraInfo}
+        <Slider images={images} />
       </Modal.Body>
-      <Modal.Footer>
-        <div className="mx-auto">
-          <Button variant="primary" onClick={onHide}>
-            Посмотреть ещё
-          </Button>
-        </div>
-      </Modal.Footer>
     </Modal>
   );
 };
@@ -56,6 +42,7 @@ PortfolioDetailDialog.propTypes = {
   subheader: PropTypes.string,
   content: PropTypes.string,
   extraInfo: PropTypes.any,
+  images: PropTypes.any
 };
 
 PortfolioDetailDialog.defaultProps = {
@@ -66,6 +53,7 @@ PortfolioDetailDialog.defaultProps = {
   subheader: "",
   content: "",
   extraInfo: null,
+  images: null
 };
 
 export default PortfolioDetailDialog;
