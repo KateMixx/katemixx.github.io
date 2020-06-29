@@ -18,9 +18,6 @@ clients: [
   },
   {
     imageFileName: "logos/Volzhskij-pekar.jpg",
-  },
-  {
-    imageFileName: "logos/logo2.jpg",
-  } 
+  }
 ]
 ---
