@@ -4,12 +4,12 @@ header: "Услуги"
 subheader: "Наша студия штор предлогает ряд услуг: "
 services: [
   {
-    iconName: "ShoppingCartIcon",
+    iconName: "RulerIcon",
     header: "Замер",
     content: "Выезд дизайнера на объект"
   },
   {
-    iconName: "ThumbTackIcon",
+    iconName: "EditIcon",
     header: "Создание дизайн-проектов",
     content: "Для частных и корпаротивных заказчиков"
   },  
@@ -18,17 +18,17 @@ services: [
     header: "Авторский надзор"
   },
   {
-    iconName: "LaptopIcon",
+    iconName: "BuildingIcon",
     header: "Монтаж",
     content: "Монтаж штор, карнизов и жалюзи любой сложности"
   },
   {
-    iconName: "LockIcon",
+    iconName: "CarIcon",
     header: "Доставка",
     content: "Доставка готовой продукции до транспортной компании"
   },
   {
-    iconName: "LockIcon",
+    iconName: "ShoppingCartIcon",
     header: "Продажа",
     content: "Интерьерных тканей, карнизов и фурнитуры"
   }

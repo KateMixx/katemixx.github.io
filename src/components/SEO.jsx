@@ -33,7 +33,7 @@ const SEO = ({ lang, description, meta, keywords, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={title}
       meta={[
         {
           name: `description`,
@@ -71,9 +71,9 @@ const SEO = ({ lang, description, meta, keywords, title }) => {
         .concat(
           keywords.length > 0
             ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
             : [],
         )
         .concat(meta)}
@@ -90,7 +90,7 @@ SEO.propTypes = {
 };
 
 SEO.defaultProps = {
-  lang: "en",
+  lang: "ru",
   meta: [],
   keywords: [],
   description: "",
