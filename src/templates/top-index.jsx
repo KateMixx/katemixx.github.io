@@ -36,7 +36,6 @@ export const query = graphql`
           brand
           anchor
           clients {
-            href
             imageFileName
           }
           copyright
@@ -75,6 +74,8 @@ export const query = graphql`
           telephone2
           address
           address2 
+          timesWork
+          timesWork2
           title               
         }
         fields {

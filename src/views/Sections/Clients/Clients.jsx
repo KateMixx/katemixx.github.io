@@ -20,9 +20,9 @@ const Clients = ({ className, frontmatter }) => {
         <SectionHeader header={header} />
       </Row>
       <Row>
-        {clients.map(({ href, imageFileName }) => (
-          <Col md={3} sm={6} className="my-3" key={imageFileName}>
-            <Client href={href} imageFileName={imageFileName} />
+        {clients.map(({ imageFileName }) => (
+          <Col md={2} sm={6} className="my-3" key={imageFileName}>
+            <Client imageFileName={imageFileName} />
           </Col>
         ))}
       </Row>

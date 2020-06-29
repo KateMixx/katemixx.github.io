@@ -11,7 +11,7 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, telephone2, email, address, address2 } = frontmatter;
+  const { anchor, header, subheader, timesWork, timesWork2, address, address2 } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -20,14 +20,6 @@ const Contact = ({ className, frontmatter }) => {
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
           <p className="text-muted mb-5">{subheader}</p>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={12} className="mr-auto text-center">
-          <Icon iconName="EnvelopIcon" size="3x" className="text-muted mb-3" />
-          <a className="d-block" href={`mailto:${email}`}>
-            {email}
-          </a>
         </Col>
       </Row>
       <Row>
@@ -45,9 +37,9 @@ const Contact = ({ className, frontmatter }) => {
           </div>
         </YMaps>
         <Col lg={4} className="mr-auto text-center">
-          <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
+          <Icon iconName="ClockIcon" size="3x" className="text-muted mb-3" />
           <a className="d-block">
-            {telephone}
+            {timesWork}
           </a>
         </Col>
       </Row>
@@ -66,9 +58,9 @@ const Contact = ({ className, frontmatter }) => {
           </div>
         </YMaps>
         <Col lg={4} className="mr-auto text-center">
-          <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
+          <Icon iconName="ClockIcon" size="3x" className="text-muted mb-3" />
           <a className="d-block">
-            {telephone2}
+            {timesWork2}
           </a>
         </Col>
       </Row>

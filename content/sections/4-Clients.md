@@ -2,28 +2,25 @@
 header: "Наши клиенты "
 clients: [
   {
-    imageFileName: "logos/chapaevskii.jpg",
-    href: "#!"
+    imageFileName: "logos/chapaev.jpg",
   },
   {
-    imageFileName: "logos/pojartech.jpg",
-    href: "#!"
+    imageFileName: "logos/filarmonia.jpg",
   },
   {
-    imageFileName: "logos/terema.jpg",
-    href: "#!"
+    imageFileName: "logos/pozhtehnika.jpg",
   },
   {
-    imageFileName: "logos/rjd.jpg",
-    href: "#!"
+    imageFileName: "logos/rzd.jpg",
   },
   {
-    imageFileName: "logos/tvAcademy.jpg",
-    href: "#!"
+    imageFileName: "logos/usadba_terema.jpg",
   },
   {
-    imageFileName: "logos/volPek.jpg",
-    href: "#!"
+    imageFileName: "logos/Volzhskij-pekar.jpg",
+  },
+  {
+    imageFileName: "logos/logo2.jpg",
   } 
 ]
 ---

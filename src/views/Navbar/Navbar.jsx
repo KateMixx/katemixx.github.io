@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 
 import { Navbar, Container, Nav } from "react-bootstrap";
+import Image from "components/Image";
 
 import useWindowOnScroll from "hooks/useWindowOnScroll";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
@@ -13,7 +14,7 @@ import NavItem from "components/NavItem";
 import "./Navbar.scss";
 
 const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
-  const { brand, menuText } = frontmatter;
+  const { brand, menuText, imageFileName } = frontmatter;
 
   const handleScrollToTop = useSmoothScrollTo(0);
 
@@ -58,9 +59,10 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
             ))}
           </Nav>
           {extraItems}
+          <Image id="logo" className="img" fileName={imageFileName} />
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar >
   );
 };
 

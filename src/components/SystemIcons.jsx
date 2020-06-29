@@ -5,9 +5,10 @@ import {
   faEnvelope,
   faPlus,
   faBars,
-  faTimes,
   faGlobe,
   faMapMarker,
+  faClock,
+  faTimes
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -19,6 +20,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export const PhoneIcon = makeFAIcon(faPhone);
+export const ClockIcon = makeFAIcon(faClock);
 export const EnvelopIcon = makeFAIcon(faEnvelope);
 export const PlusIcon = makeFAIcon(faPlus);
 export const BarsIcon = makeFAIcon(faBars);
