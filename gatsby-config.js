@@ -19,7 +19,7 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: title,
-        short_name: "Agency",
+        short_name: "Krujeva",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#e7d3ee",

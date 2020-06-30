@@ -5,6 +5,7 @@ import { Row, Col } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 import Icon from "components/Icon";
+import "./Feedback.scss";
 
 const Feedback = ({ className, frontmatter }) => {
     if (!frontmatter) {
@@ -21,24 +22,23 @@ const Feedback = ({ className, frontmatter }) => {
             <Row>
                 <Col lg={4} className="ml-auto text-center">
                     <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
-                    <a className="d-block" href={`tel:${telephone}`}>
+                    <a className="d-block href-c" href={`tel:${telephone}`}>
                         {telephone}
                     </a>
                 </Col>
                 <Col lg={4} className="mr-auto text-center">
                     <Icon iconName="EnvelopIcon" size="3x" className="text-muted mb-3" />
-                    <a className="d-block" href={`mailto:${email}`}>
+                    <a className="d-block href-c" href={`mailto:${email}`} >
                         {email}
                     </a>
                 </Col>
                 <Col lg={4} className="ml-auto text-center">
                     <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
-                    <a className="d-block" href={`tel:${telephone2}`}>
+                    <a className="d-block href-c" href={`tel:${telephone2}`}>
                         {telephone2}
                     </a>
                 </Col>
             </Row>
-
         </PageSection>
     );
 };

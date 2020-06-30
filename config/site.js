@@ -1,17 +1,15 @@
 module.exports = {
-  title: "Gatsyby Startbootstrap Agency",
+  title: "Студия штор Кружева",
   keywords: [
-    "gatsby",
-    "gatsbyjs",
-    "landing page",
-    "landing",
-    "i18n",
-    "eslint",
-    "bootstrap",
-    "startbootstrap-agency",
+    "шторы",
+    "шторы тверь",
+    "шторы на заказ",
+    "жалюзи на заказ",
+    "оформление окон",
+    "покрывала",
+    "оформление свадеб",
   ],
-  description: "gatsby version of startbootstrap-agency with i18n support.",
-  author: "thundermiracle",
-  trackingId: "UA-119418003-5",
+  description: "Широкий ассортимент тканей, карнизов и рулонных штор",
+  author: "kate",
   defaultLang: "ru"
 };
