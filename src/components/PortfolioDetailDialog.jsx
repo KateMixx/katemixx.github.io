@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Modal, Button } from "react-bootstrap";
-import Image from "components/Image";
+import { Modal } from "react-bootstrap";
 import Slider from "components/Slider"
 
 const PortfolioDetailDialog = ({
