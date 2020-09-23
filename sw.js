@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-de3fbf84fd4595a6dbbc.js"
+    "url": "webpack-runtime-3e9937b091f0ea3bca0b.js"
   },
   {
     "url": "framework-f045dbe50023c9eeb99e.js"
@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "1c4363491c694aab595ee79a2b61704b"
+    "revision": "7593b1f445303ca46da9421e60e2f3ad"
   },
   {
     "url": "google-fonts/s/droidserif/v12/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2",
@@ -56,7 +56,27 @@ self.__precacheManifest = [
     "revision": "21b7bed43e1c81de0277b6e2e96e9981"
   },
   {
+    "url": "google-fonts/s/droidserif/v13/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2",
+    "revision": "62b4ed3cb1a22974f1a1b14a45ebb76e"
+  },
+  {
+    "url": "google-fonts/s/droidserif/v13/tDbK2oqRg1oM3QBjjcaDkOr4nAfcHg.woff2",
+    "revision": "847076af0a2064282724f913e8443124"
+  },
+  {
+    "url": "google-fonts/s/droidserif/v13/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwE.woff2",
+    "revision": "c914631f20a99ca0d322d775090ea4f7"
+  },
+  {
+    "url": "google-fonts/s/droidserif/v13/tDbX2oqRg1oM3QBjjcaDkOr4lLz5CwOnSA.woff2",
+    "revision": "21b7bed43e1c81de0277b6e2e96e9981"
+  },
+  {
     "url": "google-fonts/s/kaushanscript/v8/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2",
+    "revision": "e2ea67e80b95334da4768bffdf3d4f9d"
+  },
+  {
+    "url": "google-fonts/s/kaushanscript/v9/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2",
     "revision": "e2ea67e80b95334da4768bffdf3d4f9d"
   },
   {
@@ -68,6 +88,14 @@ self.__precacheManifest = [
     "revision": "bc3aa95dca08f5fee5291e34959c27bc"
   },
   {
+    "url": "google-fonts/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2",
+    "revision": "39d93cf678c740f9f6b2b1cfde34bee3"
+  },
+  {
+    "url": "google-fonts/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
+    "revision": "bc3aa95dca08f5fee5291e34959c27bc"
+  },
+  {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b2b665af9dfdaffd8641.js"
   },
   {
@@ -76,7 +104,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "d2c473dbdea8b06aef034252677c3011"
+    "revision": "8f65019ae8f8ce943307a1b3589579fc"
   },
   {
     "url": "manifest.webmanifest",
