@@ -27,84 +27,31 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-f278135b905490d55308.js"
+    "url": "webpack-runtime-71c7e654b6a13457e450.js"
   },
   {
-    "url": "framework-f045dbe50023c9eeb99e.js"
+    "url": "framework-256fdde5199f9087be1b.js"
   },
   {
-    "url": "app-c83daf22cbb98b5c6b02.js"
+    "url": "app-d704f051f1400b20b06b.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f078f37d57f48d090f96dd4b5f7cea19"
+    "revision": "224290238416b12cb7c6955f64545401"
   },
   {
-    "url": "google-fonts/s/droidserif/v12/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2",
-    "revision": "62b4ed3cb1a22974f1a1b14a45ebb76e"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v12/tDbK2oqRg1oM3QBjjcaDkOr4nAfcHg.woff2",
-    "revision": "847076af0a2064282724f913e8443124"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v12/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwE.woff2",
-    "revision": "c914631f20a99ca0d322d775090ea4f7"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v12/tDbX2oqRg1oM3QBjjcaDkOr4lLz5CwOnSA.woff2",
-    "revision": "21b7bed43e1c81de0277b6e2e96e9981"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v13/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2",
-    "revision": "62b4ed3cb1a22974f1a1b14a45ebb76e"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v13/tDbK2oqRg1oM3QBjjcaDkOr4nAfcHg.woff2",
-    "revision": "847076af0a2064282724f913e8443124"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v13/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwE.woff2",
-    "revision": "c914631f20a99ca0d322d775090ea4f7"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v13/tDbX2oqRg1oM3QBjjcaDkOr4lLz5CwOnSA.woff2",
-    "revision": "21b7bed43e1c81de0277b6e2e96e9981"
-  },
-  {
-    "url": "google-fonts/s/kaushanscript/v8/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2",
-    "revision": "e2ea67e80b95334da4768bffdf3d4f9d"
-  },
-  {
-    "url": "google-fonts/s/kaushanscript/v9/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2",
-    "revision": "e2ea67e80b95334da4768bffdf3d4f9d"
-  },
-  {
-    "url": "google-fonts/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2",
-    "revision": "39d93cf678c740f9f6b2b1cfde34bee3"
-  },
-  {
-    "url": "google-fonts/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
-    "revision": "bc3aa95dca08f5fee5291e34959c27bc"
-  },
-  {
-    "url": "google-fonts/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2",
-    "revision": "39d93cf678c740f9f6b2b1cfde34bee3"
-  },
-  {
-    "url": "google-fonts/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
-    "revision": "bc3aa95dca08f5fee5291e34959c27bc"
-  },
-  {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b2b665af9dfdaffd8641.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-6f7251764e0aa6142918.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "43232b01cc861c0701a3ece4bd67720b"
+    "revision": "f6081b83111aea4128c98944b7fafccc"
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "7abcc02f13fbb3533e2610525c5b2def"
+    "revision": "45a2af86a1844db7e00a6cf41afe54b1"
+  },
+  {
+    "url": "polyfill-38cce18603b1d20cac17.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -201,7 +148,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-c83daf22cbb98b5c6b02.js`))) {
+  if (!resources || !(await caches.match(`/app-d704f051f1400b20b06b.js`))) {
     return await fetch(event.request)
   }
 
